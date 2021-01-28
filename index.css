@@ -1,0 +1,291 @@
+/* General page */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(126, 153, 159);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+}
+
+/* Headers */
+
+#welcome_header,
+#contact_header {
+  color: rgb(126, 153, 159);
+  font-size: 4.5vw;
+  font-family: Georgia;
+  font-weight: lighter;
+  text-align: center;
+  margin: auto;
+  margin-top: 15%;
+}
+
+#about_header,
+#work_header {
+  color: rgb(126, 153, 159);
+  font-size: 4.5vw;
+  font-family: Georgia;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#typewriter {
+  font-family: Georgia;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 2.2vw;
+}
+
+#first {
+  color: black;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #welcome_header,
+  #contact_header {
+    margin-top: 60%;
+  }
+
+  #welcome_header,
+  #contact_header,
+  #about_header,
+  #work_header {
+    font-size: 40px;
+  }
+
+  #typewriter {
+    font-size: 20px;
+  }
+}
+
+/* Welcome page */
+
+#welcome {
+  min-height: 100vh;
+  width: 100%;
+  flex: 1;
+  margin: 0 auto;
+  align-content: center;
+  background-color: #fffffa;
+  justify-content: space-between;
+}
+
+/* About me page */
+
+#about_me {
+  min-height: 100vh;
+  background-color: #fffffa;
+}
+
+#about-me-container {
+  margin-top: 3.5%;
+  margin-bottom: 3.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.my-picture {
+  height: auto;
+  width: 27%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#about-me-text-container {
+  width: 27%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.about-me-text {
+  width: 90%;
+  height: 90%;
+  color: black;
+  padding: 5%;
+  margin: auto;
+  font-size: 1vw;
+}
+
+#skills-container {
+  width: 27%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.skills-text {
+  width: 90%;
+  color: black;
+  padding: 5%;
+  margin: auto;
+  font-size: 1vw;
+}
+
+#icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 90%;
+  padding: 4%;
+  margin: auto;
+}
+
+.iconify {
+  align-items: center;
+  color: black;
+  font-size: 2.5vw;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.express {
+  color: black;
+}
+
+#about_me_button {
+  padding-bottom: 75px;
+}
+
+@media screen and (max-width: 600px) {
+  #about-me-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about-me-container,
+  #skills-container,
+  #about-me-text-container,
+  .my-picture {
+    width: 85%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .about-me-text,
+  .skills-text {
+    font-size: 3vw;
+  }
+
+  .iconify {
+    font-size: 6vw;
+  }
+}
+
+/* My Work page */
+
+#work_content {
+  min-height: 100vh;
+  background-color: #fffffa;
+}
+
+.work_block {
+  background-color: #fffffa;
+  width: 80%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.work_preview {
+  padding: 1rem;
+  width: 90%;
+}
+
+.work_img {
+  width: 18vw;
+  height: 18vw;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px #aaaaaa;
+  margin: 1rem;
+}
+
+.work_title {
+  text-align: left;
+  font-size: 1.5vw;
+}
+
+.work_description {
+  font-size: 1vw;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .work_block {
+    flex-direction: column;
+    width: 72%;
+    align-items: center;
+  }
+
+  .work_description {
+    font-size: 3vw;
+  }
+
+  .work_title {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .work_img {
+    width: 45vw;
+    height: 45vw;
+  }
+}
+
+/* Contact Me page */
+
+#contact_home {
+  height: 100vh;
+  background-color: #fffffa;
+}
+
+#final {
+  background-color: #fffffa;
+}
+
+#final_footer {
+  text-align: center;
+  font-family: Georgia;
+  font-weight: lighter;
+  color: black;
+}
