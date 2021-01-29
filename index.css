@@ -62,7 +62,7 @@ h3 {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
   #welcome_header,
   #contact_header {
     margin-top: 60%;
@@ -180,7 +180,7 @@ h3 {
   padding-bottom: 75px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
   #about-me-container {
     flex-direction: column;
     align-items: center;
@@ -250,7 +250,7 @@ h3 {
   color: black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
   .work_block {
     flex-direction: column;
     width: 72%;
